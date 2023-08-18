@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Amaca Capital Investments Ltd - Coming Soon">
+
+
+    <title>Amaca Capital Investments Ltd - Coming Soon</title>
+
+    <link href="css/foundation.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="img/favicon.png" rel="shortcut icon">
+
+    <script src="js/vendor/modernizr.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/qpx3yzm.css">
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="container">
+
+            <div class="inner-container">
+
+                <img alt="Amaca Capital Investments Ltd Logo" class="logo-home" src="img/aci_main_logo.svg" width="375">
+                <div class="clear2"></div>
+                <p class="text-center">Our website is currently in construction. To get in touch with us contact us at:
+                    <br>micheal@amaca-ci.com</p>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="box">
+    </div>
+
+    <div class="copyright">
+        <p class="text-center">&copy;
+            <?php echo date("Y"); ?> Amaca Capital Investments Ltd. All Rights Reserved.</p>
+    </div>
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+
+    </script>
+
+
+    <script>
+        function randomImage() {
+            var images = [
+                'http://www.amaca-ci.com/img/slide-1.png',
+                'http://www.amaca-ci.com/img/slide-2.png',
+                'http://www.amaca-ci.com/img/slide-3.png',
+                'http://www.amaca-ci.com/img/slide-4.png',
+                'http://www.amaca-ci.com/img/slide-5.png',
+                'http://www.amaca-ci.com/img/slide-6.png',
+                'http://www.amaca-ci.com/img/slide-7.png',
+                'http://www.amaca-ci.com/img/slide-8.png',
+                'http://www.amaca-ci.com/img/slide-9.png',
+                'http://www.amaca-ci.com/img/slide-10.png',
+                'http://www.amaca-ci.com/img/slide-11.png',
+                'http://www.amaca-ci.com/img/slide-12.png',
+                'http://www.amaca-ci.com/img/slide-13.png'
+            ];
+            var size = images.length;
+            var x = Math.floor(size * Math.random());
+            console.log(x);
+            var element = document.getElementsByClassName('content');
+            console.log(element);
+            element[0].style["background-image"] = "url(" + images[x] + ")";
+        }
+
+        document.addEventListener("DOMContentLoaded", randomImage);
+
+    </script>
+
+</body>
+
+</html>
